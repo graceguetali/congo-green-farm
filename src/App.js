@@ -20,8 +20,6 @@ function App() {
 
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', background: '#111', minHeight: '100vh' }}>
-
-      {/* Barre de navigation */}
       <div style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         background: '#0A1A0A', borderBottom: '1px solid #2D5A2D',
@@ -43,13 +41,12 @@ function App() {
         </div>
       </div>
 
-      {/* Contenu */}
       {page === 'businessplan' && <BusinessPlan />}
       {page === 'maquette' && <Maquette />}
       {page === 'pdf' && (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 20 }}>
           <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
-            
+            <a
               href="/CONGO_GREEN_FARM_BusinessPlan.pdf"
               download="CONGO_GREEN_FARM_BusinessPlan.pdf"
               style={{
