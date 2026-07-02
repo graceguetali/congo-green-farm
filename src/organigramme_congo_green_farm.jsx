@@ -3,7 +3,7 @@ import { useState } from "react";
 const VERT = "#1A5C1A";
 const OR = "#C8920A";
 const GRIS = "#4A4A4A";
-const VERT_CLAIR = "#2D8A2D";
+
 const ROUGE = "#C0392B";
 const BLEU = "#1A5276";
 
