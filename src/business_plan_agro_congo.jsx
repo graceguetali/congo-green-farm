@@ -244,7 +244,22 @@ export default function BusinessPlan() {
           </div>
         </div>
 
-        {/* Tabs */}
+        {/* Bouton téléchargement PDF */}
+      <div style={{ padding: "8px 16px", background: "#0F1F0F", borderBottom: "1px solid #2D5A2D", display: "flex", justifyContent: "flex-end" }}>
+        <a
+          href="/CONGO_GREEN_FARM_BusinessPlan.pdf"
+          download="CONGO_GREEN_FARM_BusinessPlan.pdf"
+          style={{
+            padding: "6px 14px", background: "#C8920A", color: "#fff",
+            borderRadius: 6, textDecoration: "none", fontWeight: 700, fontSize: 12,
+            fontFamily: "Arial, sans-serif"
+          }}
+        >
+          ⬇️ Télécharger le Business Plan PDF
+        </a>
+      </div>
+
+      {/* Tabs */}
         <div style={{ display: "flex", gap: 4, marginBottom: 16, background: "#E8E0D4", borderRadius: 10, padding: 4 }}>
           {tabs.map(t => (
             <button key={t.id} onClick={() => setActiveTab(t.id)} style={{
